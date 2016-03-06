@@ -1,0 +1,37 @@
+// global 
+$brand-default: 		#808b8d !default;
+$brand-primary:         #2a80b9 !default;
+$brand-success:         #2fcc71 !default;
+$brand-info:            #1bbc9d !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+// button 
+$btn-primary-color: 	#fff;
+$btn-primary-bg:        $brand-primary;
+$btn-primary-border:	$brand-primary;	 
+
+$btn-default-color:		$brand-default; 
+$btn-default-bg:		#fff;
+$btn-default-border:	$brand-default;
+
+$btn-info-color:		#fff; 
+$btn-info-bg:			$brand-info;
+$btn-info-border:		$brand-info;
+
+$btn-success-color:		#fff;
+$btn-success-bg:		$brand-success; 
+$btn-success-border:	$brand-success;
+
+$btn-warning-color:		#fff; 
+$btn-warning-bg:		$brand-warning;
+$btn-warning-border:	$brand-warning;
+
+$btn-danger-color:		#fff; 
+$btn-danger-bg:			$brand-danger; 
+$btn-danger-border:		$brand-danger;
+
+
+// form
+
+$input-border-focus:             #66afe9 !default;

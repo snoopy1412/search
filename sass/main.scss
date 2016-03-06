@@ -1,5 +1,25 @@
-@import 'vendor/bootstrap';
+// variables
+@import "variables";
 
-@import 'layout/header';
+// mixin 
+@import "mixin/mixin";
 
+// vendor
+@import "vendor/pure.min";
+
+// base
+@import "base/base";
+
+// help 
+@import "help/utilities";
+
+//	components
+@import "components/buttons";
+@import "components/form";
+
+// header
+@import "layout/grid";
+@import "layout/header";
+
+// page
 @import "page/search";
