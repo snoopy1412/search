@@ -1,0 +1,18 @@
+.user-login{
+	label{
+		color:#999;
+		font-weight: 300;
+	}
+	.form-group{
+		margin-bottom: 20px;
+	}
+	.register-password{
+		position: relative;
+	}
+	.forget-password{
+		position: absolute;
+		right: 10px;
+		top:12px;
+		z-index: 100;
+	}
+}

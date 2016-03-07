@@ -10,3 +10,29 @@
       clear: both;
     }  
 }
+
+// 固定底部样式
+%stick-root{
+    clear: both;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;    
+}
+%stick-footer{
+    clear: both;
+    position: relative;  
+}
+
+@mixin sticky-footer($footer-height) {
+  .com-stick-root {
+    @extend %stick-root;
+    margin-bottom: -$footer-height;
+    .com-stick-content {
+      // height: $footer-height;
+    }
+  }
+  .com-stick-footer {
+    @extend %stick-footer;
+    height: $footer-height;
+  }
+}

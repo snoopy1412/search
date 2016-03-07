@@ -13,13 +13,20 @@
 // help 
 @import "help/utilities";
 
+// plugin
+@import "plugin/layer";
+
 //	components
 @import "components/buttons";
 @import "components/form";
+@import "components/custom-forms";
 
-// header
+// layout
 @import "layout/grid";
 @import "layout/header";
+@import "layout/footer";
+@import "layout/register";
 
 // page
+@import "page/index";
 @import "page/search";

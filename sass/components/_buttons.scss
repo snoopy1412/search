@@ -1,8 +1,8 @@
-.button-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
-}
 .button-default {
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+.button-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 }
 .button-info {
   @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
@@ -15,4 +15,15 @@
 }
 .button-danger {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+
+// button-lg
+.button-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-large, $line-height-large, $btn-border-radius-lg);
+}
+// button-block
+.button-block{
+	display: block;
+	width: 100%;
 }

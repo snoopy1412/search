@@ -1,0 +1,1 @@
+webpackJsonp([0,1],[function(t,n,c){"use strict";c(1),c(2)},function(t,n,c){"use strict";var s=c(2);s.a()},function(t,n){"use strict";t.exports={a:function(){alert(1)}}}]);

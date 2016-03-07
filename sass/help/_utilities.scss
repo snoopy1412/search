@@ -15,6 +15,26 @@
   float: left !important;
 }
 
+// text
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+
+// 固定footer函数,为了简化操作，使用了固定的页面布局结构
+/*
+*<div class='com-stick-root'>
+*   <div class='com-stick-content'></div>
+*</div>
+*<div class='com-stick-footer'></div>
+*/
+@include sticky-footer(37px);
+
 
 // Toggling content
 // -------------------------
@@ -25,4 +45,11 @@
 }
 .show {
   display: block !important;
+}
+
+
+// list
+.list-unstyled{
+	padding-left: 0;
+    list-style: none;
 }

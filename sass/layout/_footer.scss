@@ -1,0 +1,20 @@
+.public-footer{
+	height: 37px;
+	background-color: #303030;
+	padding-top: 10px;
+	&,a{
+		color : #ddd;
+	}
+	a{
+		display: inline-block;
+		margin-right: 2px;
+		text-decoration: none;
+		&:last-child{
+			margin-right: 0;
+		}
+		&:hover{
+			color:#fff;
+			text-decoration: underline;
+		}
+	}
+}

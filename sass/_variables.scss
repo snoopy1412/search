@@ -1,4 +1,11 @@
 // global 
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
 $brand-default: 		#808b8d !default;
 $brand-primary:         #2a80b9 !default;
 $brand-success:         #2fcc71 !default;
@@ -6,14 +13,23 @@ $brand-info:            #1bbc9d !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
+$base-border-radius:	2px !default;
+
+$font-size-base:        14px !default;
+$font-size-large:       ceil(($font-size-base * 1.25)) !default;
+$line-height-large:     1.45 !default; // extra decimals for Win 8.1 Chrome
+$padding-large-vertical: 			10px !default;
+$padding-large-horizontal: 			16px !default;
+
+
 // button 
+$btn-default-color:		#fff; 
+$btn-default-bg:		$brand-default;
+$btn-default-border:	$brand-default;
+
 $btn-primary-color: 	#fff;
 $btn-primary-bg:        $brand-primary;
 $btn-primary-border:	$brand-primary;	 
-
-$btn-default-color:		$brand-default; 
-$btn-default-bg:		#fff;
-$btn-default-border:	$brand-default;
 
 $btn-info-color:		#fff; 
 $btn-info-bg:			$brand-info;
@@ -31,7 +47,15 @@ $btn-danger-color:		#fff;
 $btn-danger-bg:			$brand-danger; 
 $btn-danger-border:		$brand-danger;
 
+$btn-padding-y-lg: 		10px;
+$btn-padding-x-lg: 		16px;
+$btn-border-radius-lg:	2px;
 
 // form
-
 $input-border-focus:             #66afe9 !default;
+$input-height-large: 			 (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+$input-border-radius-large:		$base-border-radius;
+$input-color:                    $gray !default;
+$input-btn-border-width:         1px;
+
+$input-border-color:             #ccc !default;
