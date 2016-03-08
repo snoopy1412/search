@@ -1,0 +1,30 @@
+.alert{
+	width: 100%;
+	position: absolute;
+	padding: 10px 20px;
+	left :0;
+	top: 0;
+	border-radius: $base-border-radius;
+	.close{
+		    float: right;
+		    font-size: 20px;
+		    font-weight: 700;
+		    line-height: 1;
+		    color: #000;
+		    text-shadow: 0 1px 0 #fff;
+		    filter: alpha(opacity=20);
+		    opacity: .2;
+	        -webkit-appearance: none;
+		    padding: 0;
+		    cursor: pointer;
+		    background: 0 0;
+		    border: 0;
+		    color: inherit;
+	}
+}
+.alert-danger{
+	background-color: lighten($brand-danger,30%);	
+	&,*{
+		color:$brand-danger;
+	}
+}

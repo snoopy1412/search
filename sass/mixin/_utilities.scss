@@ -23,12 +23,15 @@
     position: relative;  
 }
 
-@mixin sticky-footer($footer-height) {
+@mixin sticky-footer($footer-height, $root-selector: unquote(".com-stick-root"), $root-footer-selector: unquote(".com-stick-root-footer"), $footer-selector: unquote(".com-stick-footer")) {
+  html, body {
+    height: 100%;
+  }
   .com-stick-root {
     @extend %stick-root;
     margin-bottom: -$footer-height;
-    .com-stick-content {
-      // height: $footer-height;
+    .com-stick-root-footer {
+      height: $footer-height;
     }
   }
   .com-stick-footer {

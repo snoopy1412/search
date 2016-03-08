@@ -1,0 +1,25 @@
+.pagination{
+	*{
+		display: inline-block;
+		vertical-align: top;
+		font-size: 12px;
+	}
+	.active,a:hover{
+		background-color: $brand-primary;
+		color: white;
+	}
+	a,span{
+		height: 26px;
+		line-height: 26px;
+		margin: 0 3px 6px;
+		padding: 0 10px;
+		color: #333;
+		border-radius: 2px;
+	}
+	a{
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}

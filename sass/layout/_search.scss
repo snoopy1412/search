@@ -1,0 +1,15 @@
+.search-area{
+	position: relative;
+	.search-text{
+		width: 100%;
+	}
+	.search-btn{
+		position: absolute;
+		height: 46px;
+		background-color: transparent;
+		border: 0;
+		right: 10px;
+		top:0;
+		color:#666;
+	}
+}

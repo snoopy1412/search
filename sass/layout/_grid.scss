@@ -30,6 +30,7 @@ $container-lg:                 $container-large-desktop !default;
   }
   @media (min-width: 768px) {
     width: $container-md;
+
   }
   @media (min-width: 1024px) {
     width: $container-lg;

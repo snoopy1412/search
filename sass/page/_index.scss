@@ -7,9 +7,20 @@
 	margin-bottom: 40px;
 }
 
-.index-content{
+
+// news
+.index-news {
+	margin-bottom: 100px;
+}
+.index-news-content{
 	border: 1px solid #ddd;
 	border-radius: $base-border-radius;
+}
+.index-news-title{
+	margin: 0;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	color :$brand-primary;
 }
 .index-news-item{
 	padding: 10px;

@@ -1,0 +1,11 @@
+.register-main{
+	width: 500px;
+	border: 1px solid #f1f1f1;
+	padding: 20px;
+	border-radius: $base-border-radius;
+	margin: 50px auto;
+	.form-control{
+		width: 100%;
+	}
+	
+}

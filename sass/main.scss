@@ -1,6 +1,9 @@
 // variables
 @import "variables";
 
+// icon
+@import "icon/icon";
+
 // mixin 
 @import "mixin/mixin";
 
@@ -12,21 +15,27 @@
 
 // help 
 @import "help/utilities";
-
 // plugin
-@import "plugin/layer";
+
+// animation
+@import "animation/index";
 
 //	components
 @import "components/buttons";
 @import "components/form";
 @import "components/custom-forms";
+@import "components/pagination";
+@import "components/alert";
 
 // layout
 @import "layout/grid";
 @import "layout/header";
 @import "layout/footer";
-@import "layout/register";
+@import "layout/login";
+@import "layout/search";
 
 // page
 @import "page/index";
 @import "page/search";
+@import "page/register";
+@import "page/result";
