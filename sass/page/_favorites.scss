@@ -1,0 +1,21 @@
+.forgot-main{
+	width: 768px;
+	margin:  100px auto;
+}
+.favorites-content{
+	margin-top: 40px;
+}
+.favorites-bar{
+	 margin-bottom: 20px;
+	 .c-input{
+	 	margin-right: 10px;
+	 	margin-left: 15px;
+	 }
+}
+.favorites-table{
+	margin-bottom: 20px;
+	thead{
+		background-color: lighten($brand-default,10%);
+		color:#fff;
+	}
+}

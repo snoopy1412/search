@@ -367,7 +367,10 @@ td,th {
 	user-select: none;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box
+	box-sizing: border-box;
+	&:hover{
+		text-decoration: none;
+	}
 }
 
 .pure-button::-moz-focus-inner {
@@ -405,6 +408,7 @@ td,th {
 .pure-form{
 	
 	.form-control{
+		width: 100%;
 		padding: .5em .6em;
 		display: inline-block;
 		border: 1px solid #ccc;
@@ -817,7 +821,7 @@ td,th {
 	border-collapse: collapse;
 	border-spacing: 0;
 	empty-cells: show;
-	border: 1px solid #cbcbcb
+	border: 1px solid #ddd
 }
 
 .pure-table caption {
@@ -828,7 +832,7 @@ td,th {
 }
 
 .pure-table td,.pure-table th {
-	border-left: 1px solid #cbcbcb;
+	border-left: 1px solid #ddd;
 	border-width: 0 0 0 1px;
 	font-size: inherit;
 	margin: 0;
@@ -840,7 +844,7 @@ td,th {
 	border-left-width: 0
 }
 
-.pure-table thead {
+.pure-table thead,.pure-table .thead {
 	background-color: #e0e0e0;
 	color: #000;
 	text-align: left;

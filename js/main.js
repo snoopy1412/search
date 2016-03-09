@@ -14,6 +14,6 @@ require.config({
   }
 });
 
-require(['jquery','header','login'],function(){
+require(['jquery','header','login','setting'],function(){
 
 })

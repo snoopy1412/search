@@ -1,0 +1,44 @@
+.search-aside{
+	.substance{
+		color :#666;
+	}
+	.dl-horizontal{
+	  @media (min-width: $dl-horizontal-breakpoint) {
+		dt{
+			width: 80px;
+			font-weight: 600;
+			text-align: right;
+		}
+		dd{
+			margin-left: 85px;
+		}		  	
+	  }
+	}
+}
+.result-aside-section{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px  dashed #ddd;
+	&:last-child{
+		border-bottom: 0;
+	}
+
+	.directory-item{
+		padding: 5px;
+		label{
+			font-weight: 300;
+		}
+	}
+}
+
+.search-result{
+	.pure-table {
+		.thead{
+			background-color: #eff0f4;
+		}
+		th,td{
+			padding: 1em;
+			color:#555;
+		}
+	}
+}

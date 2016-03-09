@@ -12,6 +12,7 @@
 
 // base
 @import "base/base";
+@import "base/type";
 
 // help 
 @import "help/utilities";
@@ -26,6 +27,8 @@
 @import "components/custom-forms";
 @import "components/pagination";
 @import "components/alert";
+@import "components/breadcrumb";
+@import "components/step";
 
 // layout
 @import "layout/grid";
@@ -39,3 +42,8 @@
 @import "page/search";
 @import "page/register";
 @import "page/result";
+@import "page/favorites";
+@import "page/article";
+@import "page/forgot";
+@import "page/setting";
+

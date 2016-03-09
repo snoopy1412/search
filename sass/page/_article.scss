@@ -1,0 +1,92 @@
+.artice-content{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.article-title{
+	font-size: 20px;
+	margin: 10px 0;
+	text-align: center;
+}
+.page-status{
+	color:#999;
+	.zg-bull{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+.page-inset{
+	padding: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+    line-height: 1.7;
+	blockquote{
+		padding: 10px 15px;
+		margin-bottom: 20px;
+		background-color: whitesmoke;
+		border-left: 4px solid #999999;
+		word-break: break-word;
+		font-size: 15px;
+		font-weight: 100;
+		line-height: 30px;
+	}
+	p{
+	    text-align: justify;
+	    text-justify: inter-ideograph;
+	    word-break: initial;
+	    word-break: break-word;
+	    margin-bottom: 20px;
+	    font-size: 16px;
+	    font-weight: normal;
+	}
+	table{
+		width: 100%;
+		caption{
+			text-align: left;
+			margin-bottom: 10px;
+		}
+		th,td{
+			border: 1px solid #ddd;
+			padding: 5px;
+			text-align: center;
+		}
+		thead{
+			background-color: #f1f1f1;
+		}
+	}
+}
+
+.related-articles{
+	.related-item{
+		padding: 5px;
+	}
+}
+
+.pagenav{
+	margin-top: 30px;
+	margin-bottom: 30px;
+    padding: 5px 0;
+    .pagenav_prev{
+    	text-align: left;
+    }
+    .pagenav_prev,.pagenav_next{
+    	padding: 20px;
+    }
+    .paging{
+    	color: #969696;
+	    font-weight: 400;
+	    margin-bottom: 10px;
+	    line-height: 35px;
+	    font-size: 16px;
+    }
+     .article-link{
+	    font-weight: 600;
+	    padding-top: 10px;
+	    overflow: hidden;
+	    line-height: 25px;
+	    font-size: 18px;
+	    a{
+	    	color:$brand-default;
+	    }
+    }
+}
+

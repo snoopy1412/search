@@ -3,7 +3,7 @@ label {
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: 10px;
   font-weight: bold;
-  color:#333;
+
 }
 
 .input-group {
@@ -99,6 +99,14 @@ label {
     padding-right: 15px;
     margin-bottom: 0;
     text-align: right;
+}
+.form-control-static{
+    // Size it appropriately next to real form controls
+  padding-top: ($padding-base-vertical + 1);
+  padding-bottom: ($padding-base-vertical + 1);
+  // Remove default margin from `p`
+  margin-bottom: 0;
+
 }
 
 

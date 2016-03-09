@@ -1,0 +1,31 @@
+.setting-main{
+	padding-bottom: 100px;
+}
+.setting-bar-warp{
+		box-shadow: 0 1px 2px #ccc;
+	border-bottom: 1px solid #ddd;
+}
+.setting-bar{
+
+	&>a{
+		display: inline-block;
+		padding: 10px;
+		color:$brand-default;
+		text-decoration: none;
+		border-bottom: 4px solid transparent;
+	}
+	.active{
+		color:$brand-info;
+		border-bottom-color: $brand-info;
+	}
+
+}
+.setting-tab-content{
+	margin-top: 40px;
+}
+.setting-content-item{
+	display: none;
+	&.active{
+		display: block;
+	}
+}

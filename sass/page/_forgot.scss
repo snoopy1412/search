@@ -1,0 +1,21 @@
+.forgot-title{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+%verify{
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color:$brand-info;
+}
+.forgot-step-1{
+	.verify-sucess{
+		@extend %verify;
+	}
+}
+.forgot-step-3{
+	.verify-sucess{
+		@extend %verify;
+	}
+}
