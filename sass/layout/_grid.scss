@@ -24,7 +24,8 @@ $container-lg:                 $container-large-desktop !default;
 
 .container {
   @include container-fixed;
-
+    padding-right: 15px;
+    padding-left: 15px;
   @media (min-width: 568px) {
     width: $container-sm;
   }

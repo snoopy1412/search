@@ -13,6 +13,7 @@
 // base
 @import "base/base";
 @import "base/type";
+@import "base/global";
 
 // help 
 @import "help/utilities";
@@ -29,6 +30,7 @@
 @import "components/alert";
 @import "components/breadcrumb";
 @import "components/step";
+@import "components/label";
 
 // layout
 @import "layout/grid";
@@ -46,4 +48,6 @@
 @import "page/article";
 @import "page/forgot";
 @import "page/setting";
+@import "page/help";
+@import "page/aptitude";
 

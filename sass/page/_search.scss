@@ -2,7 +2,9 @@
 	padding-bottom: 60px;
 }
 .search-aside,.search-result{
-	min-height: 900px;
+	@media (min-width: 768px){
+		min-height: 900px;		
+	}
 }
 
 // handle
@@ -53,6 +55,7 @@
 	}
 	.classification-item{
 		padding: 10px;
+		@extend %hoverColor;
 		&:hover{
 			background-color: #eee;
 		}
@@ -84,7 +87,10 @@
 
 // result
 .search-result{
-	padding: 10px 20px;
+	@media (min-width: 768px){
+		padding: 10px 20px;		
+	}
+
 }
 .search-result-list{
 	// margin-top: 20px;
@@ -103,9 +109,17 @@
 	.index{
 		font-weight: 300;
 	}
+	a{
+		word-wrap: break-word
+	}
 }
 .search-result-cas{
 	color:#999;
 	font-size: 12px;
 	font-weight: 300;
+}
+
+//
+.search-main,.favorites-main{
+	margin-bottom: 40px;
 }

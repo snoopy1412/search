@@ -7,7 +7,7 @@
   color: $color;
   background-color: $background;
   border-color: $border;
-
+  @extend %hoverColor;
   &:focus,
   &.focus {
     color: $color;

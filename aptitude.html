@@ -34,85 +34,76 @@
 <header class='public-header'>
 	<div class="container">
 		<div class="pure-menu pure-menu-horizontal ">
-		    <a href="./index.html" class="pure-menu-heading">中国物质检索申报系统</a>
-		    <ul class="pure-menu-list public-header-bar">
-		        <li class="pure-menu-item">
-		        	<a href="#" class="pure-menu-link register" id='js-register' title='登录'>
-		        		<i class='icon icon-denglu'></i>
-		        	</a>
+		    <a href="./index.html" class="pure-menu-heading pure-menu-link">中国物质检索申报系统</a>
+		    <ul class="pure-menu-list  public-header-bar">
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+		            <a href="#" id="menuLink1" class="pure-menu-link login-name">Aaron</a>
+		            <ul class="pure-menu-children">
+		                <li class="pure-menu-item"><a href="./setting.html" class="pure-menu-link">帐号设置</a></li>
+		                <li class="pure-menu-item"><a href="./favorites.html" class="pure-menu-link">我的收藏</a></li>
+		                <li class="pure-menu-item"><a href="./index.html" class="pure-menu-link">退出</a></li>
+		            </ul>
 		        </li>
 		    </ul>
 		</div>
 	</div>
 </header>
 	<!-- head.html end-->
+
+	<!-- 面包屑 -->
 	<div class="breadcrumbs-wrap">
 		<div class="container">
 			<ol class="breadcrumb">
 			  <li><a href="index.html">首页</a></li>
-			  <li class="active">找回密码</li>
+			  <li class="active">名录介绍</li>
 			</ol>				
 		</div>
-	</div>	
-	<div class="forgot-main ">
-		<h1 class='forgot-title'>找回密码</h1>
-		<section class='forgot-content'>
-			<ul class="steps">
-				<li class="step-item active">
-					<a href="password-forgot.html" title="" class="step-1">输入信息</a>
-				</li>
-				<li class="step-item">
-					<a href="password-forgot-2.html" title="" class="step-2">重置密码</a>
-				</li>
-				<li class="step-item">
-					<a href="password-forgot-3.html" title="" class="step-3">完成</a>
-				</li>
-			</ul>
+	</div>
 
-			<div class="forgot-step forgot-step-1">
-				<form class='pure-form'>
-					<div class="form-group pure-g">
-						<div class="pure-u-1 pure-u-md-1-4"></div>
-						<div class="pure-u-1 pure-u-md-1-6">	
-						 	<label for="username" class='control-label'>邮箱/用户名</label>
-						</div>
-						 <div class="pure-u-1 pure-u-md-1-3">
-						 	<input id="username" type="text" placeholder="输入用户名" class='form-control'>
-						 </div>
-					</div>
-			        <div class="form-group pure-g">
-						<div class="pure-u-1 pure-u-md-1-4"></div>
-			        	<div class="pure-u-1 pure-u-md-1-6">	
-						 	<label for="verification" class='control-label'>验证码</label>
-						</div>
-						 <div class="pure-u-1 pure-u-md-1-6">
-						 	<input id="verification " type="text" placeholder="输入验证码" class='form-control'>
-						 </div>
-						 <div class='pure-u-1 pure-u-md-1-6' style='padding-left: 10px;'>
-						 	<img src="http://henz.cirscn.com/index.php/Index/index/verify" alt="" height="36px;" width="100%">
-						 </div>				 	
-					</div>
-			        <div class="form-group pure-g">
-						<div class="pure-u-1 pure-u-md-1-4"></div>
-			            <button type="submit" class="pure-button button-info button-block pure-u-1 pure-u-md-1-2">发送验证邮件</button>
-			        </div>
-				</form>		
-
-				<!-- 发送验证邮件后 -->
-<!-- 				<div class="text-center">
-                    <div class="verify-sucess">
-                        <i class="icon icon-yanzheng"></i>
-                        <span>验证邮件已发送</span>
-                    </div>
-                    <div class="verify-mail-des">
-                        <p>验证邮件已发送至您的邮箱402****@qq.com。验证邮件24小时内有效，请尽快验证，或 <a href="javascript:void(0)" class="verify-mail-handle">重新发送邮件</a></p>
-                    </div>
-                </div> -->
-
-			</div>
-		
-		</section>
-	</div>	
+	<!-- 主体内容 -->
+	<div class="global-main">
+		<div class="container">
+			<h1>名录介绍</h1>
+			
+			<article class="aptitude-content">
+				<section class='overview'>
+					<p>
+						本平台所有数据均来自各国官方数据库信息，并配有专门从业人员即时更新数据，保证所有数据最新。我们将在该页披露所有已存在的数据库及其数据最新信息，供用户参阅。
+					</p>
+				</section>
+				<section class='aptitude-item IECSC' id='IECSC'>   
+	        		<h2>中国现有化学物质名录(IECSC)</h2>
+					<dl class='dl-horizontal'>
+						<dt>简介</dt>
+						<dd>IECSC全称为中国现有化学物质名录，由中国环境保护部化学品登记中心（CRC-MEP）发布，收录物质45602种，其中保密物质3166种。IECSC收录了自1992年1月1日至2003年10月15日期间，为了商业目的已在中国境内生产、加工、销售、使用或从国外进口的化学物质。</dd>
+					</dl>
+					<dl class='dl-horizontal'>
+						<dt>收录物质数</dt>
+						<dd>45612</dd>
+					</dl>
+					<dl class='dl-horizontal'>
+						<dt>最近更新</dt>
+						<dd>2013</dd>
+					</dl>
+				</section>
+				<section class='aptitude-item EINECS' id='EINECS'>   
+	        		<h2>欧盟现有化学物质名录(EINECS)</h2>
+					<dl class='dl-horizontal'>
+						<dt>简介</dt>
+						<dd>EINECS全称为欧洲现有商用化学物质名录，由欧盟化学品管理署（ECHA）及欧盟各成员国发布并管理，收录物质100204种。EINECS收录了1971年1月1日至1981年9月18日在欧洲市场的商用化学物质（聚合物除外），依据危险物质指令（67/548/EEC）第18条第1款进行登记的。在REACH法规下被分类为分阶段物质，EC号分配为：2xx-xxx-x或3xx-xxx-x。该名录最近更新时间为2009年。</dd>
+					</dl>
+					<dl class='dl-horizontal'>
+						<dt>收录物质数</dt>
+						<dd>100204</dd>
+					</dl>
+					<dl class='dl-horizontal'>
+						<dt>最近更新</dt>
+						<dd>2009</dd>
+					</dl>
+				</section>					
+			</article>		
+		</div>			
+	</div>
 
    <div class='com-stick-root-footer'>
    </div>

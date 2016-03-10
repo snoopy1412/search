@@ -39,3 +39,10 @@
     height: $footer-height;
   }
 }
+
+// -----------------------------------------------------------------------------------
+// 透明度 兼容ie8版本
+@mixin opacity($opacity:0.5) {
+  opacity: $opacity ;
+  filter: alpha(opacity=$opacity*100);
+}

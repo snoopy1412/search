@@ -1,0 +1,52 @@
+.help-aside{
+	padding-right: 20px;
+	.pure-menu-link{
+		@extend %no-decoration;
+
+	}
+	.pure-menu-item{
+		&.active{
+			a{
+				background-color: $brand-info;
+				color:#fff;				
+			}
+		}		
+	}
+}
+.help-item{
+	@media (max-width: 768px) {
+		margin-top: 20px;
+	}
+	display: none;
+	&.active{
+		display: block;
+	}
+	img{
+		border: 1px solid #ddd;
+	}
+}
+.help-item-platform{
+	.table{
+		width: 100%;
+		text-align: left;
+		display: table;
+		*{
+			display: table-cell;
+			width: 1%;
+		}
+	}
+}
+
+// faqs-item
+.faqs-item{
+	margin-bottom: 40px;
+	h3{
+		margin-top: 0;
+	}
+	@media (max-width: 768px) {
+		ul{
+			padding-left: 0;
+			list-style: none;
+		}
+	}
+}

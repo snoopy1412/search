@@ -6,7 +6,6 @@
 	border-bottom: 1px solid #ddd;
 }
 .setting-bar{
-
 	&>a{
 		display: inline-block;
 		padding: 10px;
@@ -18,7 +17,6 @@
 		color:$brand-info;
 		border-bottom-color: $brand-info;
 	}
-
 }
 .setting-tab-content{
 	margin-top: 40px;
@@ -28,4 +26,45 @@
 	&.active{
 		display: block;
 	}
+}
+
+
+// setting-base-item
+.setting-base-item--avatar{
+	.avatar-img{
+		position: relative;
+	}
+	.upload{
+		position: absolute;
+		width: 150px;
+		height: 150px;
+		left: 0;
+		top: 0;
+		background-color: rgba(255,255,255,.4);
+		overflow: hidden;
+		input{
+			@include opacity(0);
+			font-size: 400px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 2;
+		}
+		.icon{
+			font-size: 4em;
+			color:white;
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+			z-index: 1;
+
+		}
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.setting-base-item--email{
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
 }

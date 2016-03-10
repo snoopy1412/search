@@ -31,4 +31,10 @@ $header-link: #fff;
 			}
 		}
 	}
+	.public-header-bar{
+		display: block;
+		@media (min-width: 768px){
+			float: right;
+		}
+	}	
 }

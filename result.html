@@ -36,7 +36,7 @@
 	<div class="container">
 		<div class="pure-menu pure-menu-horizontal ">
 		    <a href="./index.html" class="pure-menu-heading pure-menu-link">中国物质检索申报系统</a>
-		    <ul class="pure-menu-list pull-right">
+		    <ul class="pure-menu-list  public-header-bar">
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
 		            <a href="#" id="menuLink1" class="pure-menu-link login-name">Aaron</a>
 		            <ul class="pure-menu-children">
@@ -51,149 +51,148 @@
 </header>
 	<!-- head.html end-->
 	
-	<div class="search-main">
-		<!-- 面包屑 -->
-		<div class="breadcrumbs-wrap">
-			<div class="container">
-				<ol class="breadcrumb">
-				  <li><a href="index.html">首页</a></li>
-				  <li><a href="search.html">搜索</a></li>
-				  <li class="active">Aziridine,homopolymer,reaction products with epichlorohydrin</li>
-				</ol>				
-			</div>
+	<!-- 面包屑 -->
+	<div class="breadcrumbs-wrap">
+		<div class="container">
+			<ol class="breadcrumb">
+			  <li><a href="index.html">首页</a></li>
+			  <li><a href="search.html">搜索</a></li>
+			  <li class="active">Aziridine,homopolymer,reaction products with epichlorohydrin</li>
+			</ol>				
 		</div>
+	</div>
 
-		<!-- search区域 -->
-		<div class="search-handle">
-			<div class="container">
-				<!-- search.html -->
-				<!-- 搜索区域 -->
+	<!-- search区域 -->
+	<div class="search-handle">
+		<div class="container">
+			<!-- search.html -->
+			<!-- 搜索区域 -->
 <form class="pure-form search-area" action="search.html">
 	 <input type="text" class='form-control input-lg search-text' placeholder='输入CAS号、#号、或者物质名称进行检索'>
 	<button type="submit" class="search-btn">
 		<i class='icon icon-search'></i>
  	</button>
 </form>
-				<!-- search.html end-->					
+			<!-- search.html end-->					
+		</div>
+
+		<div class='hot-search'>
+			<div class='container'>	
+				热门搜索 ： <a href="" title="">硫酸</a><a href="" title="">1333-333-3</a>
 			</div>
+		</div>				
+	</div>
 
-			<div class='hot-search'>
-				<div class='container'>	
-					热门搜索 ： <a href="" title="">硫酸</a><a href="" title="">1333-333-3</a>
-				</div>
-			</div>				
-		</div>	
-		<div class="container">
+	<div class="search-main container">
 
-			<!-- 结果展示 -->
-			<div class="result-content">
-				<div class="pure-g">
-					<div class="pure-u-1 pure-u-md-1-4 search-aside">
-						<section class='result-aside-section directory'>
-							<div class="result-aside-title">
-								物质所在名录
-							</div>
-							<div style="padding: 5px">
-								<label class="c-input c-checkbox" style=''>
+		<!-- 结果展示 -->
+		<div class="result-content">
+			<div class="pure-g">
+				<div class="pure-u-1 pure-u-md-1-4 search-aside">
+					<section class='result-aside-section directory'>
+						<div class="result-aside-title">
+							物质所在名录
+						</div>
+						<div style="padding: 5px">
+							<label class="c-input c-checkbox" style=''>
+							  <input type="checkbox">
+							  <span class="c-indicator"></span>
+								&nbsp;&nbsp;全选/全不选
+							</label>
+						</div>
+						
+						<ul class='list-unstyled directory-list'>
+							<li class='directory-item'>
+								<label class="c-input c-checkbox">
+								  <input type="checkbox" checked="true">
+								  <span class="c-indicator"></span>
+									《中国新化学物质名录》
+								</label>
+							</li>
+							<li class='directory-item'> 
+								<label class="c-input c-checkbox">
 								  <input type="checkbox">
 								  <span class="c-indicator"></span>
-									&nbsp;&nbsp;全选/全不选
+									《欧盟现有化学物质》
 								</label>
-							</div>
-							
-							<ul class='list-unstyled directory-list'>
-								<li class='directory-item'>
-									<label class="c-input c-checkbox">
-									  <input type="checkbox" checked="true">
-									  <span class="c-indicator"></span>
-										《中国新化学物质名录》
-									</label>
-								</li>
-								<li class='directory-item'> 
-									<label class="c-input c-checkbox">
-									  <input type="checkbox">
-									  <span class="c-indicator"></span>
-										《欧盟现有化学物质》
-									</label>
-								</li>
-							</ul>
-							<a href="" title="">更多……</a>
-						</section>
-						
-					</div>
-					<div class="pure-u-1 pure-u-md-3-4 search-result">
-						<table class='pure-table pure-table-bordered' width="100%">
-								<tr class='thead'>
-									<th colspan="2">1. 物质基本信息</th>
-								</tr>
-								<tr>
-									<td>
-										英文名称：
-									</td>
-									<td>
-										Aziridine,homopolymer,reaction products with epichlorohydrin
-									</td>
-								</tr>
-								<tr>
-									<td>
-										CAS号：
-									</td>
-									<td>68307-89-1</td>
-								</tr>
-								<tr class='thead'>
-									<th colspan="2">2. 所在物质名录</th>
-								</tr>
-								<tr>
-									<td colspan="2">
-										《中国新化学物质名录》
-									</td>
-								</tr>
-								<tr class='thead'>
-									<th colspan="2">3. 相关法案</th>
-								</tr>
-								<tr>
-									<td colspan="2">
-										《环保部7号令》
-									</td>
-								</tr>
-								<tr class='thead'>
-									<th colspan="2">4. 应尽义务</th>
-								</tr>
-								<tr>
-									<td colspan="2">
-										<p>
-											需要进行新化学物质登记(<a href="" title="">登记资料</a>) - <span>《环保部7号令》</span>
-										</p>
-									</td>
-								</tr>
-								<tr>
-									<td colspan="2" class='text-center' style="padding-top: 20px;padding-bottom: 20px;">
-										<a href="" title="" class='pure-button button-primary'>
-										<i class='icon icon-pdf'></i>
-										生成PDF</a>
-										<a href="" title="" class='pure-button button-success'>
-										<i class='icon icon-dayin'></i>
-										打印</a>
-									</td>
-								</tr>
-						</table>
-					</div>
-				</div>			
-			</div>
-		
-		
+							</li>
+						</ul>
+						<a href="" title="">更多……</a>
+					</section>
+					
+				</div>
+				<div class="pure-u-1 pure-u-md-3-4 search-result">
+					<table class='pure-table pure-table-bordered' width="100%">
+							<tr class='thead'>
+								<th colspan="2">1. 物质基本信息</th>
+							</tr>
+							<tr>
+								<td>
+									英文名称：
+								</td>
+								<td>
+									Aziridine,homopolymer,reaction products with epichlorohydrin
+								</td>
+							</tr>
+							<tr>
+								<td>
+									CAS号：
+								</td>
+								<td>68307-89-1</td>
+							</tr>
+							<tr class='thead'>
+								<th colspan="2">2. 所在物质名录</th>
+							</tr>
+							<tr>
+								<td colspan="2">
+									《中国新化学物质名录》
+								</td>
+							</tr>
+							<tr class='thead'>
+								<th colspan="2">3. 相关法案</th>
+							</tr>
+							<tr>
+								<td colspan="2">
+									《环保部7号令》
+								</td>
+							</tr>
+							<tr class='thead'>
+								<th colspan="2">4. 应尽义务</th>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<p>
+										需要进行新化学物质登记(<a href="" title="">登记资料</a>) - <span>《环保部7号令》</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class='text-center' style="padding-top: 20px;padding-bottom: 20px;">
+									<a href="" title="" class='pure-button button-primary'>
+									<i class='icon icon-pdf'></i>
+									生成PDF</a>
+									<a href="" title="" class='pure-button button-success'>
+									<i class='icon icon-dayin'></i>
+									打印</a>
+								</td>
+							</tr>
+					</table>
+				</div>
+			</div>			
 		</div>
 	</div>
+   <div class='com-stick-root-footer'>
+   </div>
 </div>
 
 <div class='com-stick-footer'>
 	<!-- footer.html -->
-			<footer class='public-footer text-center'>
+			<footer class='public-footer'>
 			<div class="container">
-				Copyright © 2016 CIRS. Tel:0571-87206555 Fax:0571-87206533 浙ICP备07030637号
-				<span class='pull-right'>
-					<a href="" title="">隐私权</a>
-					<a href="" title="">条款</a>		
+				<span class='footer-legal'>Copyright © 2016 CIRS. Tel:0571-87206555 Fax:0571-87206533 浙ICP备07030637号</span>
+				<span class='footer-privacy'>
+					<a href="./privacy.html" title="">隐私条款</a>		
+					<a href="./help.html" title="">平台帮助</a>
 				</span>		
 			</div>
 		</footer>

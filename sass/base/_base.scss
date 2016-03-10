@@ -5,6 +5,7 @@
 }
 html,body{
 	height: 100%;
+	overflow-x: hidden;
 
 }
 html{
@@ -27,6 +28,7 @@ p{
 a{
 	color : $brand-primary;
 	text-decoration: none;
+	@extend %hoverColor;
 	&:hover{
 		color:darken($brand-primary,10%);
 		text-decoration: underline;

@@ -7,8 +7,6 @@
 	<!-- head.html -->
 	<% include ./public/header-logedin.html %>
 	<!-- head.html end-->
-	
-	<div class="setting-main">
 		<div class="breadcrumbs-wrap">
 			<div class="container">
 				<ol class="breadcrumb">
@@ -17,6 +15,7 @@
 			</ol>
 			</div>			
 		</div>		
+	<div class="setting-main">
 		<div class="setting-content">
 			<div class="setting-bar-warp">
 				<div class="container">
@@ -28,47 +27,72 @@
 				</div>				
 			</div>
 			<div class='setting-tab-content container'>
+
+				<!-- 基本信息 -->
 				<div class="setting-content-item personal animated fadeIn active">
 					<h2>基本信息</h2>
-					<form class='pure-form'>
-						<div class="form-group pure-g">
-							<div class="pure-u-1 pure-u-md-1-8">
-								<label for="current" class='control-label'>用户名</label>
-							</div>
-							<div class='pure-u-md-1-3'>
-								<p class="form-control-static">aaron</p>
-							</div>
-						</div>
-						<div class="form-group pure-g">
-							<div class="pure-u-1 pure-u-md-1-8">
-								<label for="current" class='control-label'>邮&nbsp;&nbsp;&nbsp;箱</label>
-							</div>
-							<div class='pure-u-md-1-4'>
-								<p class="form-control-static">szh@cirs-group.com&nbsp;&nbsp; <a href="" title="">重新绑定邮箱</a></p>
-							</div>
-							<div class='pure-u-md-1-4'>
-								<p class="form-control-static"></p>
-							</div>
-						</div>
-						<div class="form-group pure-g">
-							<div class="pure-u-1 pure-u-md-1-8">
-								<label for="current" class='control-label'>手机号</label>
-							</div>
-							<div class='pure-u-md-1-4'>
-								<p class="form-control-static">尚未绑定&nbsp;&nbsp; <a href="" title="">绑定手机号</a></p>
-							</div>
-							<div class='pure-u-md-1-4'>
-								<p class="form-control-static">（绑定之后，就能使用手机号来登录账号啦）</p>
-							</div>
-						</div>
-						<div class='form-group pure-g'>
+					<div class='pure-form'>
+						<section class='setting-base-item setting-base-item--avatar'>
+							<div class="form-group pure-g">
+								<div class="pure-u-1 pure-u-md-1-8">
+									<label for="current" class='control-label'>用户名</label>
+								</div>
+								<div class='pure-u-1 pure-u-md-1-3'>
+									<p class="form-control-static"><strong>aaron</strong></p>
+									<div class="avatar-img" id='setting-avatar-img'>
+										<img src="./img/avatar-default.png" alt="" width="150px" height="150px">
+										<p>
+											<small>最佳上传尺寸为150*150</small>
+										</p>
+										<a href="javascript:;" title="上传头像" class='upload'>
+											<i class='icon icon-update'></i>
+											<input type="file" name="" value="" placeholder="">
+										</a>
+									</div>
+								</div>
+							</div>						
+						</section>
+
+						<section class='setting-base-item setting-base-item--email'>
+							<div class="form-group pure-g">
+								<div class="pure-u-1 pure-u-md-1-8">
+									<label for="current" class='control-label'>邮&nbsp;&nbsp;&nbsp;箱</label>
+								</div>
+								<div class='pure-u-1 pure-u-md-1-4'>
+									<p class="form-control-static">szh@cirs-group.com</p>
+								</div>
+								<div class="pure-u-1 pure-u-md-1-4">
+									<p class="form-control-static">
+										（用于账号登录，验证邮箱后，我们可以更好地保护您的账号安全）
+									</p>
+								</div>
+							</div>						
+						</section>
+						<section class='setting-base-item setting-base-item--phone'>
+							<div class="form-group pure-g">
+								<div class="pure-u-1 pure-u-md-1-8">
+									<label for="current" class='control-label'>手机号</label>
+								</div>
+								<div class='pure-u-1 pure-u-md-1-4'>
+									<p class="form-control-static">尚未绑定</p>
+								</div>
+								<div class='pure-u-1 pure-u-md-1-4'>
+									<p class="form-control-static">（绑定之后，就能使用手机号来登录账号啦）</p>
+								</div>
+
+							</div>	
+							<div class='form-group pure-g'>
 							<div class="pure-u-1 pure-u-md-1-8"></div>
 							<div class="pure-u-1 pure-u-md-1-3">
-								<button type="" class='pure-button button-info'>提交</button>
+								<button type="" class='pure-button button-info'>绑定手机号</button>
 							</div>
-						</div>
-					</form>
-				</div>				
+						</div>						
+						</section>
+
+					</div>
+				</div>	
+
+				<!-- 更改密码 -->
 				<div class="setting-content-item security animated fadeIn">
 					<h2>更改密码</h2>
 					<form class='pure-form'>
@@ -104,6 +128,8 @@
 						</div>
 					</form>
 				</div>	
+
+				<!-- 通知 -->
 				<div class="setting-content-item notifications animated fadeIn">
 					<h2>邮件通知</h2>
 					<table class='pure-table' width="100%">

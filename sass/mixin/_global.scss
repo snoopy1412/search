@@ -1,0 +1,13 @@
+// a标签hover样式
+%no-decoration{
+	&:hover{
+		color:inherit;
+		text-decoration: none;
+	}
+}
+
+// hover
+%hoverColor{
+	transition: color 0.25s,
+				background-color 0.25s;
+}

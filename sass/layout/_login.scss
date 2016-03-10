@@ -17,7 +17,9 @@
 	}
 }
 .login-error{
-	width: 400px; 
+	@media (min-width: 768px) {
+		width: 400px; 		
+	}
 	position: fixed;
 	top: 100px;
 	z-index: 39891016; 

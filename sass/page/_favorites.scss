@@ -12,6 +12,12 @@
 	 	margin-left: 15px;
 	 }
 }
+.favorites-bar-checked{
+	@media (max-width: 768px) {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
 .favorites-table{
 	margin-bottom: 20px;
 	thead{
