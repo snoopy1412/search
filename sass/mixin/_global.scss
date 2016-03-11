@@ -11,3 +11,18 @@
 	transition: color 0.25s,
 				background-color 0.25s;
 }
+
+// 箭头函数
+%arrow{
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+}
+@mixin arrow($dir,$width,$color){
+    @extend %arrow;
+    border-#{$dir}-color:$color;
+    border-width:$width;
+}

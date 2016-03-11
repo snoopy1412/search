@@ -54,7 +54,7 @@
   color: inherit;
   text-decoration: none; }
 
-a, .button-default, .button-primary, .button-info, .button-success, .button-warning, .button-danger, .search-aside-section .classification-item {
+a, .button-default, .button-primary, .button-info, .button-success, .button-warning, .button-danger, .search-aside-section .classification-item, .search-result-item-title .title-link {
   transition: color 0.25s, background-color 0.25s; }
 
 .dl-horizontal dd, .clearfix, .container, .container-fluid, .index-news-item {
@@ -1113,6 +1113,87 @@ textarea.input-lg,
 select[multiple].input-lg {
   height: auto; }
 
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline,
+.has-success.radio label,
+.has-success.checkbox label,
+.has-success.radio-inline label,
+.has-success.checkbox-inline label {
+  color: #3c763d; }
+
+.has-success .form-control {
+  border-color: #3c763d;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .has-success .form-control:focus {
+    border-color: #2b542c;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
+
+.has-success .input-group-addon {
+  color: #3c763d;
+  border-color: #3c763d;
+  background-color: #dff0d8; }
+
+.has-success .form-control-feedback {
+  color: #3c763d; }
+
+.has-warning .help-block,
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline,
+.has-warning.radio label,
+.has-warning.checkbox label,
+.has-warning.radio-inline label,
+.has-warning.checkbox-inline label {
+  color: #8a6d3b; }
+
+.has-warning .form-control {
+  border-color: #8a6d3b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .has-warning .form-control:focus {
+    border-color: #66512c;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
+
+.has-warning .input-group-addon {
+  color: #8a6d3b;
+  border-color: #8a6d3b;
+  background-color: #fcf8e3; }
+
+.has-warning .form-control-feedback {
+  color: #8a6d3b; }
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+  color: #a94442; }
+
+.has-error .form-control {
+  border-color: #a94442;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .has-error .form-control:focus {
+    border-color: #843534;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
+
+.has-error .input-group-addon {
+  color: #a94442;
+  border-color: #a94442;
+  background-color: #f2dede; }
+
+.has-error .form-control-feedback {
+  color: #a94442; }
+
 .c-input {
   position: relative;
   display: inline;
@@ -1438,6 +1519,10 @@ a.label:hover, a.label:focus {
   .label-danger[href]:hover, .label-danger[href]:focus {
     background-color: #c9302c; }
 
+.validate-msg-error {
+  margin-top: 5px;
+  color: #d9534f; }
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -1591,7 +1676,7 @@ a.label:hover, a.label:focus {
   .index-news-item .label {
     position: absolute;
     right: 10px;
-    top: 2px; }
+    top: 5px; }
   .index-news-item a {
     text-decoration: none;
     color: #424f63; }
@@ -1612,11 +1697,9 @@ a.label:hover, a.label:focus {
       margin-left: 10px;
       margin-right: 10px; }
 
-.search-content {
-  padding-bottom: 60px; }
-
 @media (min-width: 768px) {
   .search-aside, .search-result {
+    padding-bottom: 40px;
     min-height: 900px; } }
 
 .search-handle {
@@ -1635,11 +1718,6 @@ a.label:hover, a.label:focus {
   padding: 10px 20px 10px 0;
   box-shadow: inset -5px 0 5px #f5f5f5;
   background-color: #fefefe; }
-  .search-aside .total {
-    text-align: center;
-    margin-top: 20px; }
-    .search-aside .total span {
-      font-weight: 600; }
 
 .search-aside-section {
   margin-bottom: 40px; }
@@ -1650,9 +1728,11 @@ a.label:hover, a.label:focus {
     text-decoration: none; }
   .search-aside-section .arrow-right, .search-aside-section .text {
     color: #444851; }
+  .search-aside-section .arrow-right {
+    font-family: SimSun; }
   .search-aside-section .classification-item {
     padding: 10px; }
-    .search-aside-section .classification-item:hover {
+    .search-aside-section .classification-item:hover, .search-aside-section .classification-item.active {
       background-color: #eee; }
   .search-aside-section .related-list a, .search-aside-section .recent-list a {
     display: inline-block;
@@ -1675,7 +1755,6 @@ a.label:hover, a.label:focus {
     padding: 10px 20px; } }
 
 .search-result-item {
-  margin: 10px 0;
   padding: 10px;
   border-bottom: 1px dashed #ddd; }
   .search-result-item:last-child {
@@ -1687,14 +1766,18 @@ a.label:hover, a.label:focus {
     font-weight: 300; }
   .search-result-item-title a {
     word-wrap: break-word; }
+  .search-result-item-title .title-link {
+    font-weight: 500;
+    color: #424f63; }
+    .search-result-item-title .title-link:hover {
+      color: #1bbc9d; }
 
 .search-result-cas {
   color: #999;
   font-size: 12px;
-  font-weight: 300; }
-
-.search-main, .favorites-main {
-  margin-bottom: 40px; }
+  font-weight: 300;
+  display: block;
+  padding-left: 10px; }
 
 .register-main {
   width: 500px;
@@ -1704,6 +1787,8 @@ a.label:hover, a.label:focus {
   margin: 50px auto; }
   .register-main .form-control {
     width: 100%; }
+  .register-main .form-group {
+    position: relative; }
 
 .search-aside .substance {
   color: #666; }
@@ -1734,9 +1819,8 @@ a.label:hover, a.label:focus {
   padding: 1em;
   color: #555; }
 
-.forgot-main {
-  width: 768px;
-  margin: 100px auto; }
+.favorites-main {
+  margin-bottom: 40px; }
 
 .favorites-content {
   margin-top: 40px; }
@@ -1834,6 +1918,10 @@ a.label:hover, a.label:focus {
     font-size: 18px; }
     .pagenav .article-link a {
       color: #424f63; }
+
+.forgot-main {
+  width: 768px;
+  margin: 100px auto; }
 
 .forgot-title {
   font-size: 20px;

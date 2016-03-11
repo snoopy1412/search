@@ -1,7 +1,8 @@
 require.config({
   paths: {
     // vendor区域
-    jquery: './vendor/jquery-1.12.1.min', //经典
+    jquery: './vendor/jquery-1.12.1.min', 
+    validate : './vendor/jquery.validate.min',
 
     // plugin区域
     layer : '../plugin/layer/layer',
@@ -10,10 +11,12 @@ require.config({
 
   },
   shim: {
-
+  	validate : {
+  		deps :['jquery']
+  	}
   }
 });
 
-require(['jquery','header','login','setting','help'],function(){
+require(['jquery','header','login','setting','help','register','retrieve'],function(){
 
 })

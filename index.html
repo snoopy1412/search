@@ -1,6 +1,8 @@
 <!-- head.html -->
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -25,6 +27,7 @@
 	 <script type="text/javascript" src='./js/vendor/require.js' data-main='./js/main.js'></script>
 	
 </head>
+
 
 <!-- head.html end-->
 
@@ -83,7 +86,7 @@
 							<div class="news-content-warp pure-u-1 pure-u-md-5-6">
 								<h3 class='news-title'><a href="article.html" title="环保部公示2016年第2批拟批准《新化学物质环境管理登记证">环保部公示2016年第2批拟批准《新化学物质环境管理登记证</a></h3>
 								<div class='news-status'>
-									<a href="">化学品新闻速递</a><span class="zg-bull">•</span><time datetime="2016-03-09">2016-03-09</time>
+									<span>化学品新闻速递</span><span class="zg-bull">•</span><time datetime="2016-03-09">2016-03-09</time>
 								</div>
 								<p class='news-summary'>
 									<span>摘要需要确定的字数，多出的字数可以用省略号代替摘要需要确定的字数，多出的字数可以用省略号代替摘要需要确定的字数，多出的字数可以用省略号代替……</span>
@@ -100,7 +103,7 @@
 							<div class="news-content-warp pure-u-1 pure-u-md-5-6">
 								<h3 class='news-title'><a href="article.html" title="环保部公示2016年第2批拟批准《新化学物质环境管理登记证">环保部公示2016年第2批拟批准《新化学物质环境管理登记证</a></h3>
 								<div class='news-status'>
-									<a href="">化学品新闻速递</a><span class="zg-bull">•</span><time datetime="2016-03-09">2016-03-09</time>
+									<span>化学品新闻速递</span><span class="zg-bull">•</span><time datetime="2016-03-09">2016-03-09</time>
 								</div>
 								<p class='news-summary'>
 									<span>摘要需要确定的字数，多出的字数可以用省略号代替摘要需要确定的字数，多出的字数可以用省略号代替摘要需要确定的字数，多出的字数可以用省略号代替……</span>
@@ -152,14 +155,14 @@
 <!-- login.html -->
 <!-- 注册登录 -->
 <section class='user-login' style='display: none;padding: 20px;min-width: 100%;'>
-	<form class="pure-form">
+	<form class="pure-form" id='login-form'>
 		<div class="form-group">
 	        <!-- <label for="email">Email</label> -->
 	        <div class="input-group">
 	        	<span class="input-group-addon">
 	        		<i class='icon icon-user'></i>
 	        	</span>
-	        	<input id="email" type="text" placeholder="输入用户名" class='form-control input-lg'>
+	        	<input id="username" name='username' type="text" placeholder="输入用户名" class='form-control input-lg'>
 	        </div>		
 		</div>
 		<div class="form-group register-password">
@@ -167,9 +170,9 @@
 	        	<span class="input-group-addon">
 	        		<i class='icon icon-password'></i>
 	        	</span>
-	        	<input id="email" type="password" placeholder="输入密码" class='form-control input-lg'>
+	        	<input id="password" name='password' type="password" placeholder="输入密码" class='form-control input-lg'>
 	        </div>	
-	        <a href="./password-forgot.html" title="找回密码" class='forget-password'>找回密码</a>
+	        <a href="./retrieve-password.html" title="找回密码" class='forget-password'>找回密码</a>
 		</div>
 		<div class="form-group clearfix">
 			<label class="c-input c-checkbox pull-right">

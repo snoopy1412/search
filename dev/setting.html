@@ -68,25 +68,49 @@
 								</div>
 							</div>						
 						</section>
-						<section class='setting-base-item setting-base-item--phone'>
+						<section class='setting-base-item setting-base-item--phone' id='phone-validate'>
+
+						<div class='phone-show'>
 							<div class="form-group pure-g">
 								<div class="pure-u-1 pure-u-md-1-8">
 									<label for="current" class='control-label'>手机号</label>
 								</div>
 								<div class='pure-u-1 pure-u-md-1-4'>
-									<p class="form-control-static">尚未绑定</p>
+									<p class="form-control-static" id='phone-str'>尚未绑定</p>
 								</div>
 								<div class='pure-u-1 pure-u-md-1-4'>
 									<p class="form-control-static">（绑定之后，就能使用手机号来登录账号啦）</p>
 								</div>
-
 							</div>	
 							<div class='form-group pure-g'>
-							<div class="pure-u-1 pure-u-md-1-8"></div>
-							<div class="pure-u-1 pure-u-md-1-3">
-								<button type="" class='pure-button button-info'>绑定手机号</button>
+								<div class="pure-u-1 pure-u-md-1-8"></div>
+								<div class="pure-u-1 pure-u-md-1-3">
+									<button type="button" class='pure-button button-info' id='binding-mobile'>绑定手机号</button>
+								</div>
 							</div>
-						</div>						
+						</div>
+						<div class='phone-handle' style="display: none">
+							<div class="form-group pure-g">
+								<div class="pure-u-1 pure-u-md-1-8">
+									<label for="confirm_phone" class='control-label'>手机号</label>
+								</div>
+								<div class='pure-u-1 pure-u-md-1-4'>
+									<input type="tel" name="confirm_phone" id='confirm_phone' placeholder="输入手机号" class='form-control'>
+								</div>
+								<div class='pure-u-1 pure-u-md-1-4'>
+									<p class="form-control-static">（绑定之后，就能使用手机号来登录账号啦）</p>
+								</div>
+							</div>	
+							<div class='form-group pure-g'>
+								<div class="pure-u-1 pure-u-md-1-8"></div>
+								<div class="pure-u-1 pure-u-md-1-3">
+									<button type="button" class='pure-button button-info' id='success-mobile'>确认</button>
+									<button type="button" class='pure-button button-default' id='cancel-mobile'>取消</button>
+								</div>
+							</div>
+						</div>
+							
+					
 						</section>
 
 					</div>
@@ -95,35 +119,35 @@
 				<!-- 更改密码 -->
 				<div class="setting-content-item security animated fadeIn">
 					<h2>更改密码</h2>
-					<form class='pure-form'>
+					<form class='pure-form' id='change-password'>
 						<div class="form-group pure-g">
 							<div class="pure-u-1 pure-u-md-1-8">
-								<label for="current" class='control-label'>当前密码</label>
+								<label for="old_password" class='control-label'>当前密码</label>
 							</div>
 							<div class='pure-u-md-1-3'>
-								<input type="password" name="" value="" placeholder="" class='form-control'>
+								<input type="password" id='old_password' name="old_password" value="" placeholder="" class='form-control'>
 							</div>
 						</div>
 						<div class="form-group pure-g">
 							<div class="pure-u-1 pure-u-md-1-8">
-								<label for="current" class='control-label'>新密码</label>
+								<label for="password" class='control-label'>新密码</label>
 							</div>
 							<div class='pure-u-md-1-3'>
-								<input type="password" name="" value="" placeholder="" class='form-control'>
+								<input type="password" id='password' name="password" value="" placeholder="" class='form-control'>
 							</div>
 						</div>
 						<div class="form-group pure-g">
 							<div class="pure-u-1 pure-u-md-1-8">
-								<label for="current" class='control-label'>确认新密码</label>
+								<label for="confirm_password" class='control-label'>确认新密码</label>
 							</div>
 							<div class='pure-u-md-1-3'>
-								<input type="password" name="" value="" placeholder="" class='form-control'>
+								<input type="password" id='confirm_password' name="confirm_password" value="" placeholder="" class='form-control'>
 							</div>
 						</div>
 						<div class='form-group pure-g'>
 							<div class="pure-u-1 pure-u-md-1-8"></div>
 							<div class="pure-u-1 pure-u-md-1-3">
-								<button type="" class='pure-button button-info'>提交</button>
+								<button type="submit" class='pure-button button-info'>提交</button>
 							</div>
 						</div>
 					</form>

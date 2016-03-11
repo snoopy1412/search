@@ -1,14 +1,34 @@
-define(['jquery'],function($){
-	var $loginCheck = $('#login-check'),
-		dismiss = '[data-dismiss="alert"]';
+define(['jquery', 'validate'], function($, validate) {
+	// var dismiss = '[data-dismiss="alert"]';
 
-	$loginCheck.on('click',function(){
-		
-		$(dismiss).parents('.login-error').show();
-		console.log($(dismiss).parents('.login-error'))
+
+	$(document).on('click', '[data-dismiss="alert"]', function() {
+		$(this).parent().hide();
 	})
 
-	$(document).on('click',dismiss,function(){
-		$(this).parent().hide();
+
+	$('#login-form').on('invalid-form.validate', function() {
+		$('.login-error').show();
+	}).validate({
+		rules: {
+			username: {
+				required: true,
+				remote: "check.php",
+			},
+			password: {
+				required: true,
+				remote: "check.php",
+			}
+		},
+		messages: {
+			username: {
+				required: "",
+				remote: ''
+			},
+			password: {
+				required: "",
+				remote: ''
+			},
+		},
 	})
 })

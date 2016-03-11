@@ -1,6 +1,8 @@
 <!-- head.html -->
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -25,6 +27,7 @@
 	 <script type="text/javascript" src='./js/vendor/require.js' data-main='./js/main.js'></script>
 	
 </head>
+
 
 <!-- head.html end-->
 
@@ -145,7 +148,7 @@
 							</tr>
 							<tr>
 								<td colspan="2">
-									《中国新化学物质名录》
+									<a href="aptitude.html" title="">《中国新化学物质名录》</a>
 								</td>
 							</tr>
 							<tr class='thead'>
@@ -205,14 +208,14 @@
 <!-- login.html -->
 <!-- 注册登录 -->
 <section class='user-login' style='display: none;padding: 20px;min-width: 100%;'>
-	<form class="pure-form">
+	<form class="pure-form" id='login-form'>
 		<div class="form-group">
 	        <!-- <label for="email">Email</label> -->
 	        <div class="input-group">
 	        	<span class="input-group-addon">
 	        		<i class='icon icon-user'></i>
 	        	</span>
-	        	<input id="email" type="text" placeholder="输入用户名" class='form-control input-lg'>
+	        	<input id="username" name='username' type="text" placeholder="输入用户名" class='form-control input-lg'>
 	        </div>		
 		</div>
 		<div class="form-group register-password">
@@ -220,9 +223,9 @@
 	        	<span class="input-group-addon">
 	        		<i class='icon icon-password'></i>
 	        	</span>
-	        	<input id="email" type="password" placeholder="输入密码" class='form-control input-lg'>
+	        	<input id="password" name='password' type="password" placeholder="输入密码" class='form-control input-lg'>
 	        </div>	
-	        <a href="./password-forgot.html" title="找回密码" class='forget-password'>找回密码</a>
+	        <a href="./retrieve-password.html" title="找回密码" class='forget-password'>找回密码</a>
 		</div>
 		<div class="form-group clearfix">
 			<label class="c-input c-checkbox pull-right">

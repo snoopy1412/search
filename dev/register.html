@@ -6,46 +6,45 @@
 	<!-- head.html -->
 	<% include ./public/header.html %>
 	<!-- head.html end-->
-	
 	<div class="register-main">
-		<form class='pure-form'>
+		<form class='pure-form' id='register-form' method="post">
 			<div class="form-group">
 				 <label for="username">用户名</label>
 				 <div>
-				 	<input id="username" type="text" placeholder="输入用户名" class='form-control'>
+				 	<input id="username" name='username' type="text" placeholder="输入用户名" class='form-control'>
 				 </div>
 			</div>
 			<div class="form-group">
 				 <label for="email">邮箱</label>
 				 <div>
-				 	<input id="email" type="text" placeholder="输入常用邮箱" class='form-control'>
+				 	<input id="email" name='email' type="text" placeholder="输入常用邮箱" class='form-control'>
 				 </div>
 			</div>
 			<div class="form-group">
 				 <label for="password">密码</label>
 				 <div>
-				 	<input id="password" type="text" placeholder="输入密码" class='form-control'>
+				 	<input id="password" name='password' type="text" placeholder="输入密码" class='form-control'>
 				 </div>
 			</div>
 			<div class="form-group">
-				 <label for="password2">确认密码</label>
+				 <label for="confirm_password">确认密码</label>
 				 <div>
-				 	<input id="password2" type="text" placeholder="再次确认密码" class='form-control'>
+				 	<input id="confirm_password" name='confirm_password' type="text" placeholder="再次确认密码" class='form-control'>
 				 </div>
 			</div>
 
 	        <div class="form-group">
-				 <label for="verification ">验证码</label>
+				 <label for="verification">验证码</label>
 				 <div class='pure-g'>
 				 <div class='pure-u-md-2-3'>
-				 	<input id="verification " type="text" placeholder="输入验证码" class='form-control'>
+				 	<input id="verification" name='verification' type="text" placeholder="输入验证码" class='form-control'>
 				 </div>
 				 <div class='pure-u-md-1-3' style='padding-left: 10px;'>
 				 	<img src="http://henz.cirscn.com/index.php/Index/index/verify" alt="" height="36px;" width="100%">
 				 </div>				 	
 				 </div>
 			</div>
-	        <div class="form-group">
+	        <div class="form-group clearfix">
     			<label class="c-input c-checkbox pull-right">
 				  <input type="checkbox">
 				  <span class="c-indicator"></span>
@@ -53,7 +52,7 @@
 				</label>	
 	        </div>
 	        <div class="form-group">
-	            <button type="submit" class="pure-button button-info button-block">注册</button>
+	        <input type="submit" name="" value="注册"  class="pure-button button-info button-block">
 	        </div>
 
 		</form>

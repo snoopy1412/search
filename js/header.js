@@ -1,12 +1,8 @@
 define(['layerInit'],function(){
 
 	var width = $(window).width(),
-		height = $(window).height(),
-		resultWidth,
-		resultHeight;
-	var outHeight = $(document).scrollTop();
+		height = $(window).height();
 
-	console.log(height,outHeight);
 
 	if(width >= 768){
 		resultWidth = '600px';
@@ -22,8 +18,10 @@ define(['layerInit'],function(){
 	        type: 1,
 	        title :'登录',
 	        area: [resultWidth, resultHeight],
+	        scrollbar: false,
 	        shadeClose: true, //点击遮罩关闭
 	        content: $('.user-login')
 	    });
+
 	});
 })
