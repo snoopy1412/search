@@ -5,11 +5,11 @@
 
 	}
 	.pure-menu-item{
-		&.active{
-			a{
+		a{
+			&.active{
 				background-color: $brand-info;
-				color:#fff;				
-			}
+				color:#fff;	
+			}							
 		}		
 	}
 }
@@ -17,15 +17,11 @@
 	@media (max-width: 768px) {
 		margin-top: 20px;
 	}
-	display: none;
-	&.active{
-		display: block;
-	}
 	img{
 		border: 1px solid #ddd;
 	}
 }
-.help-item-platform{
+.help-item-greenhand{
 	.table{
 		width: 100%;
 		text-align: left;

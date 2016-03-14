@@ -8,15 +8,20 @@ require.config({
     layer : '../plugin/layer/layer',
 
     // 自编写 components 区域
+    tab : './components/tab',
+    suggest : './components/suggest',
 
   },
   shim: {
   	validate : {
   		deps :['jquery']
-  	}
+  	},
+    suggest : {
+      deps : ['jquery']
+    }
   }
 });
 
-require(['jquery','header','login','setting','help','register','retrieve'],function(){
-
+require(['common','header','login','index','setting','register','retrieve'],function(){
+  
 })

@@ -20,16 +20,16 @@
 			<div class="setting-bar-warp">
 				<div class="container">
 					<div class="setting-bar">
-						<a href="javascript:;" title="个人信息" class='active'>个人信息</a>
-						<a href="javascript:;" title="安全与密码">安全与密码</a>
-						<a href="javascript:;" title="通知设置">通知设置</a>
+						<a href="#setting-base" title="个人信息" class='active' data-toggle="tab">个人信息</a>
+						<a href="#setting-security" title="安全与密码" data-toggle="tab">安全与密码</a>
+						<a href="#setting-notifications" title="通知设置" data-toggle="tab">通知设置</a>
 					</div>				
 				</div>				
 			</div>
-			<div class='setting-tab-content container'>
+			<div class='container tab-content setting-tab-content'>
 
 				<!-- 基本信息 -->
-				<div class="setting-content-item personal animated fadeIn active">
+				<div class="tab-pane animated fadeIn active" id='setting-base'>
 					<h2>基本信息</h2>
 					<div class='pure-form'>
 						<section class='setting-base-item setting-base-item--avatar'>
@@ -39,7 +39,9 @@
 								</div>
 								<div class='pure-u-1 pure-u-md-1-3'>
 									<p class="form-control-static"><strong>aaron</strong></p>
-									<div class="avatar-img" id='setting-avatar-img'>
+
+									<!-- 用户头像，初期不需要 -->
+									<!-- <div class="avatar-img" id='setting-avatar-img'>
 										<img src="./img/avatar-default.png" alt="" width="150px" height="150px">
 										<p>
 											<small>最佳上传尺寸为150*150</small>
@@ -48,11 +50,10 @@
 											<i class='icon icon-update'></i>
 											<input type="file" name="" value="" placeholder="">
 										</a>
-									</div>
+									</div> -->
 								</div>
 							</div>						
 						</section>
-
 						<section class='setting-base-item setting-base-item--email'>
 							<div class="form-group pure-g">
 								<div class="pure-u-1 pure-u-md-1-8">
@@ -69,55 +70,52 @@
 							</div>						
 						</section>
 						<section class='setting-base-item setting-base-item--phone' id='phone-validate'>
-
-						<div class='phone-show'>
-							<div class="form-group pure-g">
-								<div class="pure-u-1 pure-u-md-1-8">
-									<label for="current" class='control-label'>手机号</label>
-								</div>
-								<div class='pure-u-1 pure-u-md-1-4'>
-									<p class="form-control-static" id='phone-str'>尚未绑定</p>
-								</div>
-								<div class='pure-u-1 pure-u-md-1-4'>
-									<p class="form-control-static">（绑定之后，就能使用手机号来登录账号啦）</p>
-								</div>
-							</div>	
-							<div class='form-group pure-g'>
-								<div class="pure-u-1 pure-u-md-1-8"></div>
-								<div class="pure-u-1 pure-u-md-1-3">
-									<button type="button" class='pure-button button-info' id='binding-mobile'>绑定手机号</button>
-								</div>
-							</div>
-						</div>
-						<div class='phone-handle' style="display: none">
-							<div class="form-group pure-g">
-								<div class="pure-u-1 pure-u-md-1-8">
-									<label for="confirm_phone" class='control-label'>手机号</label>
-								</div>
-								<div class='pure-u-1 pure-u-md-1-4'>
-									<input type="tel" name="confirm_phone" id='confirm_phone' placeholder="输入手机号" class='form-control'>
-								</div>
-								<div class='pure-u-1 pure-u-md-1-4'>
-									<p class="form-control-static">（绑定之后，就能使用手机号来登录账号啦）</p>
-								</div>
-							</div>	
-							<div class='form-group pure-g'>
-								<div class="pure-u-1 pure-u-md-1-8"></div>
-								<div class="pure-u-1 pure-u-md-1-3">
-									<button type="button" class='pure-button button-info' id='success-mobile'>确认</button>
-									<button type="button" class='pure-button button-default' id='cancel-mobile'>取消</button>
+							<div class='phone-show'>
+								<div class="form-group pure-g">
+									<div class="pure-u-1 pure-u-md-1-8">
+										<label for="current" class='control-label'>手机号</label>
+									</div>
+									<div class='pure-u-1 pure-u-md-1-4'>
+										<p class="form-control-static" id='phone-str'>尚未绑定</p>
+									</div>
+									<div class='pure-u-1 pure-u-md-1-4'>
+										<p class="form-control-static">（绑定之后，就能使用手机号来登录账号啦）</p>
+									</div>
+								</div>	
+								<div class='form-group pure-g'>
+									<div class="pure-u-1 pure-u-md-1-8"></div>
+									<div class="pure-u-1 pure-u-md-1-3">
+										<button type="button" class='pure-button button-info' id='binding-mobile'>绑定手机号</button>
+									</div>
 								</div>
 							</div>
-						</div>
-							
-					
+							<div class='phone-handle' style="display: none">
+								<div class="form-group pure-g">
+									<div class="pure-u-1 pure-u-md-1-8">
+										<label for="confirm_phone" class='control-label'>手机号</label>
+									</div>
+									<div class='pure-u-1 pure-u-md-1-4'>
+										<input type="tel" name="confirm_phone" id='confirm_phone' placeholder="输入手机号" class='form-control'>
+									</div>
+									<div class='pure-u-1 pure-u-md-1-4'>
+										<p class="form-control-static">（绑定之后，就能使用手机号来登录账号啦）</p>
+									</div>
+								</div>	
+								<div class='form-group pure-g'>
+									<div class="pure-u-1 pure-u-md-1-8"></div>
+									<div class="pure-u-1 pure-u-md-1-3">
+										<button type="button" class='pure-button button-info' id='success-mobile'>确认</button>
+										<button type="button" class='pure-button button-default' id='cancel-mobile'>取消</button>
+									</div>
+								</div>
+							</div>
 						</section>
 
 					</div>
 				</div>	
 
 				<!-- 更改密码 -->
-				<div class="setting-content-item security animated fadeIn">
+				<div class="tab-pane animated fadeIn" id='setting-security'>
 					<h2>更改密码</h2>
 					<form class='pure-form' id='change-password'>
 						<div class="form-group pure-g">
@@ -154,7 +152,7 @@
 				</div>	
 
 				<!-- 通知 -->
-				<div class="setting-content-item notifications animated fadeIn">
+				<div class="tab-pane animated fadeIn" id='setting-notifications'>
 					<h2>邮件通知</h2>
 					<table class='pure-table' width="100%">
 						<thead>
