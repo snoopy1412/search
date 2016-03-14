@@ -1783,10 +1783,15 @@ a.label:hover, a.label:focus {
     padding: 10px 20px; } }
 
 .search-result-item {
+  position: relative;
   padding: 10px;
   border-bottom: 1px dashed #ddd; }
   .search-result-item:last-child {
     border-bottom: 0; }
+  .search-result-item .favorites {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
 
 .search-result-item-title {
   margin-top: 0; }

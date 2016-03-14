@@ -38,8 +38,9 @@ define(['jquery','validate'],function($,validate){
 				equalTo: "两次密码输入不一致"
 			},
 			email: {	
-				required : "请输入一个正确的邮箱",
-				remote : "该邮箱已经存在"
+				required : "请输入邮箱地址",
+				remote : "该邮箱已经存在",
+				email : '请输入有效的邮箱地址'
 			},
 			verification : {
 				required : '验证码不能为空',

@@ -1,3 +1,4 @@
-define(['jquery','setting-validate', 'setting-phoneValidate'], function($) {
+define(['jquery', 'setting-validate', 'setting-phoneValidate'], function($) {
+
 
 })

@@ -1,3 +1,3 @@
-require(['jquery','tab'],function(){
+require(['jquery','tab','collapse'],function(){
 
 })
